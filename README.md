@@ -75,7 +75,7 @@ Sandbox link is **required** — a working hosted environment (HuggingFace Space
 - **No live leaderboard.** Scores are revealed only after submissions close. There is no feedback during the competition.
 - **Three submissions max.** Your last valid submission counts.
 - **AI tools are allowed.** Declare them honestly. The evaluation is designed so that AI-assisted work where you did real engineering succeeds, while AI-only submissions fail at Stages 3-5.
-- **The dataset contains traps.** Keyword stuffers, plain-language Tier 5s, behavioral twins, and ~80 honeypots with subtly impossible profiles. Ranking honeypots in the top 10 will disqualify you. See `redrob_signals_doc.md`.
+- **The dataset contains traps.** Keyword stuffers, plain-language Tier 5s, behavioral twins, and ~80 honeypots with subtly impossible profiles.Submissions with honeypot rate > 10% in top 100 are disqualified you. See `redrob_signals_doc.md`.
 - **You will be interviewed if you reach the top X.** Be prepared to walk through your architecture and defend your design choices.
 
 ## Asking for help
