@@ -54,10 +54,6 @@ The format is described in `submission_spec.md` Section 2-3. The compute constra
 
 ### 4. Validate before submitting
 
-```bash
-python validate_submission.py your_submission.csv --candidates candidates.jsonl.gz
-```
-
 This catches format errors before you upload. The validator handles both `.jsonl` and gzipped `.jsonl.gz` files.
 
 ### 5. Submit
