@@ -81,7 +81,6 @@ Your code that produces the submission must satisfy the following constraints:
 
 **You CAN, before the constraint window (during your build):**
 
-- Pre-compute embeddings using any model you like (including hosted APIs) and ship them as part of your submission package.
 - Train and ship any local model up to 5 GB.
 - Build any indexes you need.
 
