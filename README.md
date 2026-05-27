@@ -4,23 +4,26 @@ Welcome to the Intelligent Candidate Discovery & Ranking Challenge.
 
 ## What's in this bundle
 
-| File | What it is |
-|---|---|
-| `candidates.jsonl.gz` | The 100,000-candidate pool you'll rank. Gzipped JSONL (~52 MB compressed, ~465 MB uncompressed). |
-| `sample_candidates.json` | First 50 candidates as pretty-printed JSON. Use this to inspect the schema quickly. |
-| `job_description.md` | The job description you're ranking candidates against. **Read it carefully — including the section at the end specifically for hackathon participants.** |
-| `submission_spec.md` | **Read this in full before starting.** Submission format, rules, compute constraints, evaluation stages. |
-| `submission_metadata_template.yaml` | Template for the metadata you'll provide alongside your submission. |
-| `candidate_schema.json` | JSON Schema describing every field in a candidate record. |
-| `redrob_signals_doc.md` | Reference for the 23 behavioral signals in each candidate's `redrob_signals` object. Includes documentation of the trap candidates in the dataset. |
-| `sample_submission.csv` | A format reference. **Not a high-quality ranking** — just an example of the CSV structure your submission should match. |
-| `validate_submission.py` | Format validator. Run this on your submission before uploading. |
+
+| File                                | What it is                                                                                                                                               |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `candidates.jsonl.gz`               | The 100,000-candidate pool you'll rank. Gzipped JSONL (~52 MB compressed, ~465 MB uncompressed).                                                         |
+| `sample_candidates.json`            | First 50 candidates as pretty-printed JSON. Use this to inspect the schema quickly.                                                                      |
+| `job_description.md`                | The job description you're ranking candidates against. **Read it carefully — including the section at the end specifically for hackathon participants.** |
+| `submission_spec.md`                | **Read this in full before starting.** Submission format, rules, compute constraints, evaluation stages.                                                 |
+| `submission_metadata_template.yaml` | Template for the metadata you'll provide alongside your submission.                                                                                      |
+| `candidate_schema.json`             | JSON Schema describing every field in a candidate record.                                                                                                |
+| `redrob_signals_doc.md`             | Reference for the 23 behavioral signals in each candidate's `redrob_signals` object. Includes documentation of the trap candidates in the dataset.       |
+| `sample_submission.csv`             | A format reference. **Not a high-quality ranking** — just an example of the CSV structure your submission should match.                                  |
+| `validate_submission.py`            | Format validator. Run this on your submission before uploading.                                                                                          |
+
 
 ## Getting started
 
 ### 1. Read the docs (~30 minutes)
 
 In this order:
+
 1. `job_description.md` — understand what role you're ranking candidates for
 2. `submission_spec.md` — understand the rules and evaluation pipeline
 3. `redrob_signals_doc.md` — understand the trap candidates and signal envelopes
@@ -60,6 +63,7 @@ This catches format errors before you upload. The validator handles both `.jsonl
 ### 5. Submit
 
 Submit via the portal. You'll be asked for:
+
 - The CSV file
 - All the metadata from `submission_metadata_template.yaml` (team name, GitHub repo, **sandbox link**, AI tools declaration, etc.)
 - See `submission_spec.md` Section 10 for the full list
@@ -72,10 +76,10 @@ Sandbox link is **required** — a working hosted environment (HuggingFace Space
 - **Three submissions max.** Your last valid submission counts.
 - **AI tools are allowed.** Declare them honestly. The evaluation is designed so that AI-assisted work where you did real engineering succeeds, while AI-only submissions fail at Stages 3-5.
 - **The dataset contains traps.** Keyword stuffers, plain-language Tier 5s, behavioral twins, and ~80 honeypots with subtly impossible profiles. Ranking honeypots in the top 10 will disqualify you. See `redrob_signals_doc.md`.
-- **You will be interviewed if you reach the top 10.** Be prepared to walk through your architecture and defend your design choices.
+- **You will be interviewed if you reach the top X.** Be prepared to walk through your architecture and defend your design choices.
 
 ## Asking for help
 
-If you find a bug in the bundle (e.g., schema doesn't match data, validator rejects valid format) please report it via the official hackathon Discord channel. We will not answer questions about ranking strategy.
+If you find a bug in the bundle (e.g., schema doesn't match data, validator rejects valid format) please report it via the official hackathon support channel.
 
 Good luck.
