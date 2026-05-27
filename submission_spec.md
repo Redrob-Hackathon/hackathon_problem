@@ -183,7 +183,7 @@ Your submission flows through these stages:
 - Scores increasing as rank increases (rank 1 has lowest score).
 - Submission file submitted as `.xlsx` or `.json` instead of `.csv`.
 
-Run `python validate_submission.py your_submission.csv --candidates candidates.jsonl.gz` before uploading. (The validator handles both `.jsonl` and gzipped `.jsonl.gz` files.)
+Double-check these locally before uploading — the server-side auto-validator rejects on any of them.
 
 ---
 
