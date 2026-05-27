@@ -93,7 +93,7 @@ Your code that produces the submission must satisfy the following constraints:
 
 **Enforcement.** At Stage 3, top-N submissions must provide their full code repository. Your ranking step will be reproduced inside a sandboxed Docker container matching these constraints exactly. **If your submission cannot be reproduced within these limits, it is disqualified at Stage 3**, regardless of your composite score. Make sure your code runs locally on a 16 GB CPU-only machine within 5 minutes before you submit.
 
-### Single submission window
+### Three-submission cap
 
 You may make at most **3 submissions** total during the competition window. Your final entry is your **last valid submission**. Earlier submissions are not preserved.
 
