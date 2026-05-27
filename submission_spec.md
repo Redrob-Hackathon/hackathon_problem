@@ -1,4 +1,4 @@
-# Submission Specification — Redrob Hackathon v3
+# Submission Specification — Redrob Hackathon v4
 
 **Read this carefully before submitting.** Submissions that don't match this spec will be auto-rejected by the validator without scoring.
 

@@ -23,30 +23,30 @@ This dataset includes these signals so that ranking systems can incorporate them
 ## The 23 signals
 
 
-| #   | Signal                                                     | Range                         | What it measures                                                      |
+| #   | Signal                                                     | Range / type                  | What it measures                                                      |
 | --- | ---------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------- |
 | 1   | `profile_completeness_score`                               | 0-100                         | How much of the profile they've filled in                             |
-| 2   | `signup_days_ago`                                          | 5-1500                        | Days since they signed up on Redrob                                   |
+| 2   | `signup_date`                                              | date string                   | When they signed up on Redrob                                         |
 | 3   | `last_active_date`                                         | date string                   | When they last logged in                                              |
 | 4   | `open_to_work_flag`                                        | bool                          | Have they marked themselves available                                 |
-| 5   | `profile_views_30d`                                        | 0-400                         | How often their profile has been viewed by recruiters in last 30 days |
-| 6   | `applications_30d`                                         | 0-25                          | How many roles they've applied to recently                            |
+| 5   | `profile_views_received_30d`                               | integer >= 0                  | How often their profile has been viewed by recruiters in last 30 days |
+| 6   | `applications_submitted_30d`                               | integer >= 0                  | How many roles they've applied to recently                            |
 | 7   | `recruiter_response_rate`                                  | 0.0-1.0                       | What fraction of recruiter messages they reply to                     |
-| 8   | `avg_response_time_hours`                                  | 1-280                         | Median time to respond to a recruiter message                         |
-| 9   | `skill_assessment_score`                                   | 0-100                         | Average score across Redrob's skill assessments they've taken         |
-| 10  | `skill_assessments_completed`                              | list[str]                     | Which assessments they completed                                      |
-| 11  | `connections`                                              | 10-2000                       | Number of Redrob connections                                          |
-| 12  | `total_endorsements`                                       | 0-250                         | Total skill endorsements received                                     |
-| 13  | `notice_period_days`                                       | 0-180                         | Their stated notice period                                            |
-| 14  | `expected_salary_lpa_min/max`                              | 3-75                          | Salary expectations in LPA                                            |
-| 15  | `work_mode_preference`                                     | onsite/hybrid/remote/flexible | Their stated preference                                               |
-| 16  | `willing_to_relocate`                                      | bool                          | Will they relocate if needed                                          |
-| 17  | `github_activity_score`                                    | -1 to 100                     | GitHub commits/contributions score (-1 if no GitHub linked)           |
-| 18  | `search_appearances_30d`                                   | 0-1500                        | How often they show up in recruiter searches                          |
-| 19  | `saved_by_recruiters_30d`                                  | 0-80                          | How many recruiters bookmarked them in last 30 days                   |
-| 20  | `interview_completion_rate`                                | 0.0-1.0                       | What fraction of interviews they've actually attended                 |
-| 21  | `offer_acceptance_rate`                                    | -1 to 1.0                     | What fraction of offers they accepted (-1 if no prior offers)         |
-| 22  | `verified_email` / `verified_phone` / `linkedin_connected` | bool                          | Identity verification flags                                           |
-| 23  | `endorsements_per_skill`                                   | dict[str, int]                | Per-skill endorsement counts                                          |
+| 8   | `avg_response_time_hours`                                  | number >= 0                   | Median time to respond to a recruiter message                         |
+| 9   | `skill_assessment_scores`                                  | dict[str, 0-100]              | Per-skill Redrob assessment scores                                    |
+| 10  | `connection_count`                                         | integer >= 0                  | Number of Redrob connections                                          |
+| 11  | `endorsements_received`                                    | integer >= 0                  | Total skill endorsements received                                     |
+| 12  | `notice_period_days`                                       | 0-180                         | Their stated notice period                                            |
+| 13  | `expected_salary_range_inr_lpa.min` / `.max`               | number >= 0                   | Salary expectations in INR lakhs per annum                            |
+| 14  | `preferred_work_mode`                                      | onsite/hybrid/remote/flexible | Their stated work-mode preference                                     |
+| 15  | `willing_to_relocate`                                      | bool                          | Will they relocate if needed                                          |
+| 16  | `github_activity_score`                                    | -1 to 100                     | GitHub commits/contributions score (-1 if no GitHub linked)           |
+| 17  | `search_appearance_30d`                                    | integer >= 0                  | How often they show up in recruiter searches                          |
+| 18  | `saved_by_recruiters_30d`                                  | integer >= 0                  | How many recruiters bookmarked them in last 30 days                   |
+| 19  | `interview_completion_rate`                                | 0.0-1.0                       | What fraction of interviews they've actually attended                 |
+| 20  | `offer_acceptance_rate`                                    | -1 to 1.0                     | What fraction of offers they accepted (-1 if no prior offers)         |
+| 21  | `verified_email`                                           | bool                          | Whether their email address is verified                               |
+| 22  | `verified_phone`                                           | bool                          | Whether their phone number is verified                                |
+| 23  | `linkedin_connected`                                       | bool                          | Whether their LinkedIn account is connected                           |
 
 
