@@ -79,10 +79,7 @@ Your code that produces the submission must satisfy the following constraints:
 
 **Why these constraints?** This is a real-world recruiting system, not a benchmark. A system that calls GPT-4 or Claude per candidate cannot scale to a 200K candidate pool in production. We want systems that have thought about latency-quality tradeoffs.
 
-**You CAN, before the constraint window (during your build):**
-
-- Train and ship any local model up to 5 GB.
-- Build any indexes you need.
+In practice, running an LLM call for each of 100,000 candidates will not fit the 5-minute CPU budget, even if the model runs locally. Plan for a small ranker over precomputed features, indexes, or compact local models.
 
 **You CANNOT, during the ranking step:**
 
