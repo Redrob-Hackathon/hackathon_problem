@@ -61,6 +61,7 @@ CAND_0007729,100,0.412,"Adjacent skills only — likely below cutoff but include
 - Each `candidate_id` appears **exactly once**.
 - Every `candidate_id` must exist in the released `candidates.jsonl`.
 - `score` is non-increasing with rank — i.e., score at rank 1 ≥ score at rank 2 ≥ ... ≥ score at rank 100. Ties are allowed.
+- If two candidates have the same score, you must still assign unique ranks. Break score ties deterministically using a secondary signal from your model, or by `candidate_id` ascending.
 
 ### Compute constraints
 
